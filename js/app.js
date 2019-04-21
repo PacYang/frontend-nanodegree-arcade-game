@@ -123,8 +123,8 @@ function enemy_create(){
     }
     // 游戏通关处理
     if (player.success == 1){
-        alert('你已通关');
-        clearInterval(interval_id);
+        player = new Player(3, 6);
+        allEnemies = [];
     }
     for (let i in allEnemies){
         // bugs和player碰撞处理
